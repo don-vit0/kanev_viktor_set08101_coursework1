@@ -1,0 +1,121 @@
+body {
+	background-color:#323b44;
+	font-family: "Ubuntu";
+}
+
+/*h2 {
+	text-align: center;
+    color: #3bafda;
+}
+*/
+
+h5 {
+	text-align: left;
+	color: #3bafda;
+	margin-bottom: 0;
+}
+
+p {
+	text-align: center;
+	color: #3bafda;
+}
+
+img {
+	padding-left: 60px;
+	width: 90%;
+	height: 90%;
+}
+
+.button {
+	background-color: white;
+	color: black;
+	border: 2px solid #FF9900;
+	border-radius: 6px;
+	padding: 14px 40px;
+	font-size: 18px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	margin-top: 5px;
+}
+
+.button:hover {
+	background-color: #FF9900;
+	color: white;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	background-color: #323b44;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.3s;
+}
+
+.sidenav, .submenu {
+	list-style: none;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 8px;
+	text-decoration: none;
+	font-size: 25px;
+	color:#FF9900 ;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+	color: black;
+}
+
+.sidenav li:hover .submenu {
+	display: block;
+	max-height: 200px;
+	padding-left: 0;
+}
+
+.submenu a {
+	background-color: #38424f;
+	color: black;
+}
+
+.submenu a:hover {
+	background-color: #FF9900
+}
+
+.submenu {
+	overflow: hidden;
+	max-height: 0;
+	-webkit-transition: all 0.4s ease-out;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+#main {
+	transition: margin-left .5s;
+	padding: 15px;
+}
+
+textarea {
+	width: 100%;
+	height: 60px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	resize: none;
+}
+
+textarea:focus {
+	border: 3px solid #FF9900;
+}

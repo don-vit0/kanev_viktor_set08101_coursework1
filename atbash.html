@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atbash cipher</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+	<div id="sideNav" class="sidenav">
+		<a href="javasctipt:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<li><a href="#">Alphabetical Substitution ciphers</a>
+			<ul class = "submenu">
+				<li><a href="caesar.html">Caesar cipher</a></li>
+				<li><a href="atbash.html">Atbash mirror cipher</a></li>
+			</ul>
+		</li>
+		<li><a href = "#">Ciphers using key</a>
+			<ul class = "submenu">
+				<li><a href = "vigenere.html">Vigenere Cipher</a></li>
+			</ul>
+		</div>
+		<div id="main">
+			<span style="font-size:30px;cursor: pointer; color:#FF9900" onclick="openNav()">&#9776;Navigate</span>
+			<p>Tool to decrypt/encrypt with Atbash automatically. Atbash (Mirror code) is a substitution cipher from the hebraic alphabet. It consists in substitution the first letter of the alphabet with the last one, the second letter, with the second last one, and so on.</p>
+			<h5>PLAIN TEXT</h5>
+			<form>
+				<textarea id = "text1"></textarea>
+			</form>
+			<button id = "cipher" class="button" onclick="document.getElementById('demo').innerHTML = atbash(document.getElementById('text1').value)">Cipher</button>
+			<h5>ATBASH CIPHERTEXT</h5>
+			<form>
+				<textarea id = "text2"></textarea>
+			</form>
+			<button id = "decipher" class="button" onclick="document.getElementById('demo').innerHTML = atbashDec(document.getElementById('text2').value)">Decipher</button>
+			<h2 style="text-align:left; color:#3bafda !important;">Result:</h2>
+			<p id="demo" style="text-align:left; color:#3bafda !important;"></p>
+		</div>
+		<script type="text/javascript" src="atbash.js"></script>
+		<script type="text/javascript" src="sidenav.js"></script>
+	</body>
+</html>
